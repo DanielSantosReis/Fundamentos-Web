@@ -4,44 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="index.htm"> Home </a>
-        </li>
-        <li>
-            <a href="contato.htm"> Contato </a>
-        </li>
-    </ul>
-
+    <nav>
+        <ul id="menu">
+        <li><a href="index.htm"> Home </a></li>
+        <li><a href="contato.htm"> Contato </a></li>
+        <li><a href="certificados.htm"> Certificados </a></li>
+        </ul>
+    </nav>
     <h1> Meu Contato </h1>
 
-    <form>
-        <label for="nome"> Nome: </label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email"> Email: </label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto"> Assunto: </label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="6"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
+    <main class="contato">
+        <section class="form">
+            <h2> Entre em contato comigo </h2>
+            <form>
+                <label for="nome"> Nome: </label><br>
+                <input type="text" id="nome">
 
-        <h2> Endereço </h2>
+                <label for="email"> Email: </label><br>
+                <input type="email" id="email">
 
-        <p> Av. Pacaembu, 500 - Barra Funda </p>
+                <label for="assunto"> Assunto: </label><br>
+                <textarea name="assunto" id="assunto" cols="60" rows="6"></textarea>
 
-        <p> São Paulo - SP </p>
+                <button>Enviar</button>   
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0333505048197!2d-46.66340488554395!3d-23.531302866366897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce581a7faa5ed7%3A0x5fd7f92c791d4c2b!2sAv.%20Pacaembu%2C%20500%20-%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1644455531939!5m2!1spt-BR!2sbr" 
-        width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </form>
+            </form>
+        </section>
+
+        <section class="endereco">
+                <h2> Endereço </h2>
+                <p> Av. Pacaembu, 500 - Barra Funda </p>
+                <p> São Paulo - SP </p>
+        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0333505048197!2d-46.66340488554395!3d-23.531302866366897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce581a7faa5ed7%3A0x5fd7f92c791d4c2b!2sAv.%20Pacaembu%2C%20500%20-%20Barra%20Funda%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1644455531939!5m2!1spt-BR!2sbr" 
+                width="450" 
+                height="300" 
+                style="border:0;"
+                allowfullscreen="" 
+                loading="lazy"
+                ></iframe>
+        </section>    
+    </main>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.instagram.com/kr_daniel_/" target="_blank">
+                <img class="tamanho" src="/assets/img/12918182511566470606-128.png" alt="rede social">
+            </a>
+            <a href="https://www.facebook.com/daniel.h.santos.94" target="_blank">
+                <img class="tamanho" src="/assets/img/14179583611530077750-128.png" alt="rede social">
+            </a>
+            <a href="https://github.com/DanielSantosReis" target="_blank">
+                <img class="tamanho" src="/assets/img/15911776611566470604-128.png" alt="rede social">
+            </a>
+            
+        </div>
+        <p class="center">Fan page do Sasuke - feito em 2022 ♣</p> 
+    </footer>
     
 </body>
 </html>

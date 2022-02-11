@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+
+    .hello {
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/img/14179583611530077750-128.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    h1 {
+    font-size: 15rem;
+    text-align: left;
+    }
+
+    p {
+    display: flex;
+    border-right: 2px solid rgb(77, 52, 223);
+    width: 55vw;  
+    }
+
+    .linha {
+    display: flex;
+    border: 5px solid blue;
+    }
+
+    .tm-50{
+        width: 45vw;
+        height: 50vh;
+    }
+
+    /*menu geral*/
+
+    .menu {
+        display: inline;
+        justify-content: center;
+        padding: 2rem;
+        text-align: center;
+    }
+    .menu li {
+        display: inline;
+        padding: 20px;
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: blueviolet;
+        font-size: 25px;
+    }
+    
+    .menu li a:hover {
+        color: rgb(171, 142, 185);
+    }
+
+    /*Footer editions*/
+
+    .container{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .tamanho{
+        width: 40px;
+        height: 40px;
+        padding: 30px;
+    }
+    .center{
+        text-align: center;
+    }

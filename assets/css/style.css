@@ -30,18 +30,18 @@ p,h1, h2, li, a,label{
     padding: 2rem;
     text-align: center;
 }
-#menu li {
+.menu li {
     display: inline;
-    padding: 20px;
+    padding: 30px;
 }
 
-#menu li a {
+.menu li a {
     text-decoration: none;
     color: blueviolet;
     font-size: 25px;
 }
 
-#menu li a:hover {
+.menu li a:hover {
     color: rgb(171, 142, 185);
 }
 #meuPith {
@@ -99,6 +99,12 @@ input, textarea {
     border-radius: 10px;
     border: 0;
     color: #141314;
+}
+.espacamento{
+    padding: 40px;
+}
+.espFooter{
+    padding: 30px;
 }
 button {
     padding: 5px 2rem;

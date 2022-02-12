@@ -20,7 +20,7 @@
         
     
     <main>
-        <h1 class="espacamento">Sobre o desenvolvedor Daniel</h1><br><br>
+        <h1 class="espacamento"><span class="type-effect">Sobre o desenvolvedor Daniel</span></h1>
         <section id="meuPith">
             <div class="sobreGeral">
                 <div class="texto">
@@ -47,22 +47,23 @@
     </main> 
     
     <h2 class="center">Um Video</h2>
-    <div class="container">
+    <div class="pdVideo">
         <iframe 
         width="640" 
         height="360" 
         src="https://www.youtube.com/embed/Q2uJwigiS-I" 
         title="YouTube video player" 
         frameborder="2" 
-        allow="accelerometer; autoplay; 
-        clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
         </iframe>
     </div>
-    
+    <div class="top" onclick='subirTela()'>
+        Voltar ao topo
+    </div>
     <hr>
     <footer>
-        <div class="container">
+        <div>
             <a href="https://www.instagram.com/kr_daniel_/" target="_blank">
                 <img class="tamanho" src="/assets/img/12918182511566470606-128.png" alt="rede social">
             </a>
@@ -72,9 +73,20 @@
             <a href="https://github.com/DanielSantosReis" target="_blank">
                 <img class="tamanho" src="/assets/img/15911776611566470604-128.png" alt="rede social">
             </a>
-            
+            <p class="center">Bibliografia de Daniel - ♥ - feito em 2022</p>
         </div>
-        <p class="center">Bibliografia de Daniel - ♥ - feito em 2022</p> 
     </footer>
+    
+    <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        new TypeIt(".type-effect", {
+            strings: [""],
+            loop: true
+        }).go()
+    });
+    </script>
 </body>
 </html>

@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Shizuru&family=Ubuntu:ital,wght@1,300&display=swap');
 
-*{
+* {
     font-family: 'Poppins', cursive;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+/*Configurações Geral para todas as páginas*/
+body {
+    background-color: #151313;
+    color: #fcfcfc;
 }
 
-body{
-    background-color: #242524;
-}
-p,h1, h2, li, a,label{
-    color: rgb(233, 223, 223);
-    text-decoration: none;
-}
 .container{
-    display: flex;
+    display: flex; 
     flex-flow: row;
     justify-content: center;
     align-items: center;
-}
+} 
 .center{
     text-align: center;
 }
 
+.espacamento{
+    padding: 40px;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
 /* Meu menu Geral */
 .menu {
     display: inline;
@@ -44,6 +48,8 @@ p,h1, h2, li, a,label{
 .menu li a:hover {
     color: rgb(171, 142, 185);
 }
+/*////////////////////////////////////////////////////////////////////////////*/
+/*Configuração geral da página index */
 #meuPith {
     display: flex;
     flex-direction: column;
@@ -58,15 +64,23 @@ p,h1, h2, li, a,label{
     width: 50%;
     text-align: justify;
 }
+.top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #924848;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.top:hover {
+    background-color: #9c09af;
+    cursor: pointer;
+}
+/*Perfil do meu Index*/
 .br-50{
     border-radius: 50%;
 }
-/*imagem do Footer*/
-.tamanho{
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-}
+
 .perfil{
     width: 250px;
     height: 250px;
@@ -77,34 +91,49 @@ p,h1, h2, li, a,label{
 .perfil:hover{
     transform: rotateY(180deg);
 }
-/*Estilizando o contato*/
-
+.pdVideo{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+/* Ambiente do Contato*/
 .contato {
     display: flex;
     width: 80vw;
+    margin: 0;
+    min-height: 80vh;
+
+}
+#txtNome, #txtEmail, #txtAssunto {
+    margin-bottom: 1.5rem;
+}
+.form {
+    width: 60%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.form {
-    width: 75%;
+.form form {
+    width: 70%;
     margin: 0 auto;
 }
-label {
-    text-align: left;
+h2 {
+    text-align: center;
+    padding: 40px;
 }
+
 input, textarea {
     width: 100%;
-    margin-bottom: 1.5rem;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 9px;
     border: 0;
     color: #141314;
 }
-.espacamento{
-    padding: 40px;
-}
-.espFooter{
-    padding: 30px;
+label {
+    text-align: left;
 }
 button {
     padding: 5px 2rem;
@@ -113,7 +142,7 @@ button {
     display: block;
     background-color: #9d7fa1;
     border: 2px solid #ffff;
-    border-radius: 10px;
+    border-radius: 9px;
     color: #fcfcfc;
     text-transform: uppercase;
 }
@@ -121,6 +150,17 @@ button:hover {
     background-color: #e2d0d0;
     color: #3b1999;
 }
+#mapa {
+    position: absolute;
+    width: 40vw;
+    height: 40vh;
+    transition: .5s;
+}
+.endereco {
+    
+    }
+/*////////////////////////////////////////////////////////////////////////////*/
+/* Para Ficar com otimo visual em diferentes dispositivos*/
 @media (max-width: 768px) {
     .sobreGeral {
     flex-direction: column-reverse;
@@ -133,7 +173,17 @@ button:hover {
     width: 480px;
     height: 480px;
     }
-    .endereco {
-    display: none;
-    }
+
 }
+/*////////////////////////////////////////////////////////////////////////////*/
+/* Mecher com o Footer */
+.tamanho{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    padding: 2rem
+}
+/*////////////////////////////////////////////////////////////////////////////*/
